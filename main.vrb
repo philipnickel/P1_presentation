@@ -1,0 +1,8 @@
+\frametitle{Code Listings}
+Example code:
+
+    \begin{lstlisting}[language=Python, basicstyle=\ttfamily\small]
+def hello_world():
+    print("Hello, World!")
+    return True
+    \end{lstlisting}

@@ -1,0 +1,35 @@
+% Custom commands
+
+% Command to set the theme color
+\newcommand{\setcolor}[1]{\def\chosencolor{#1}}
+
+% Command to set the department
+\newcommand{\setdepartment}[1]{\def\department{#1}}
+
+% Custom title page command
+% Supports 1-3 authors (separate with \and)
+\newcommand{\inserttitlepage}{
+    \begin{frame}[noframenumbering]
+        \vspace{2em}
+        \centering
+        {\Huge \bfseries \inserttitle}
+
+        \vspace{2em}
+        % Authors - \and will create line breaks
+        {\large \insertauthor}
+
+        \vspace{1em}
+        {\normalsize \insertinstitute}\\
+        \vspace{0.5em}
+        {\normalsize \insertdate}
+
+        \vfill
+    \end{frame}
+}
+
+% TikZ styles for flowcharts (examples)
+\usetikzlibrary{shapes.geometric, arrows}
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=red!30]
+\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=orange!30]
+\tikzstyle{decision} = [diamond, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=green!30]
+\tikzstyle{arrow} = [thick,->,>=stealth]

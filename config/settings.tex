@@ -1,0 +1,28 @@
+% DTU theme settings
+
+% Load DTU theme (from theme/ directory)
+\makeatletter
+\def\input@path{{theme/}}
+\makeatother
+\usetheme{DTU}
+
+% Set text margins
+\setbeamersize{text margin left=22mm}
+
+% DTU colours for diagrams
+\pgfplotscreateplotcyclelist{DTU}{%
+dtured,         fill=dtured,        \\%
+blue,           fill=blue,          \\%
+brightgreen,    fill=brightgreen    \\%
+navyblue,       fill=navyblue       \\%
+yellow,         fill=yellow         \\%
+orange,         fill=orange         \\%
+grey,           fill=grey           \\%
+red,            fill=red            \\%
+green,          fill=green          \\%
+purple,         fill=purple         \\%
+}
+
+% Table of contents (TOC) and numbering of headings
+\setcounter{tocdepth}{1}    % Depth of table of content
+\setcounter{secnumdepth}{2} % Depth of section numbering

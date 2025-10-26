@@ -1,0 +1,87 @@
+% Main content slides
+
+\section{Main Content}
+
+\begin{frame}{Sample Content}
+    \begin{block}{Important Point}
+        This is a block with important information.
+    \end{block}
+
+    \vspace{1em}
+
+    Regular text can go here to explain your ideas.
+
+    \begin{itemize}
+        \item Supporting detail 1
+        \item Supporting detail 2
+        \item Supporting detail 3
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Two Column Layout}
+    \begin{columns}
+        \column{0.5\textwidth}
+        \textbf{Left Column}
+        \begin{itemize}
+            \item Point 1
+            \item Point 2
+            \item Point 3
+        \end{itemize}
+
+        \column{0.5\textwidth}
+        \textbf{Right Column}
+        \begin{itemize}
+            \item Point A
+            \item Point B
+            \item Point C
+        \end{itemize}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Mathematics}
+    You can include mathematical equations:
+
+    \begin{equation}
+        E = mc^2
+    \end{equation}
+
+    \vspace{1em}
+
+    Inline math also works: $a^2 + b^2 = c^2$
+
+    \vspace{1em}
+
+    More complex expressions:
+    \begin{align}
+        \nabla \cdot \mathbf{E} &= \frac{\rho}{\epsilon_0} \\
+        \nabla \times \mathbf{E} &= -\frac{\partial \mathbf{B}}{\partial t}
+    \end{align}
+\end{frame}
+
+\subsection{Advanced Features}
+
+\begin{frame}{Tables}
+    \begin{table}
+        \centering
+        \caption{Example table}
+        \begin{tabular}{lcc}
+            \toprule
+            \textbf{Item} & \textbf{Value 1} & \textbf{Value 2} \\
+            \midrule
+            A & 10 & 20 \\
+            B & 15 & 25 \\
+            C & 20 & 30 \\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+\end{frame}
+
+\begin{frame}[fragile]{Code Listings}
+    Example code:
+
+    \begin{lstlisting}[language=Python, basicstyle=\ttfamily\small]
+def hello_world():
+    print("Hello, World!")
+    return True
+    \end{lstlisting}
+\end{frame}
